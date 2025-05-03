@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.stopwatch {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .stopwatch {
+  background: #1e1e1e;
+}
+
+.time-display {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.controls button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+#pause {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+#reset {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+#lap {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+#toggle-dark-mode {
+  background-color: #6a1b9a;
+  color: #ffffff;
+}
+
+.laps {
+  margin-top: 20px;
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laps ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .laps ul li {
+  border-color: #333;
+}
+
